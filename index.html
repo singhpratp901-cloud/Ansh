@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#351407">
+
+<title>Sigma Loot | Join Telegram</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '2586367428498783');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2586367428498783&ev=PageView&noscript=1"
+alt="">
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 25px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background:
+        radial-gradient(ellipse at top, #59240d, transparent 65%),
+        linear-gradient(135deg, #160902, #321205, #170802);
+}
+
+.container {
+    max-width: 630px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 65px 38px 40px;
+    text-align: center;
+    border-radius: 55px;
+    border: 1px solid rgba(255, 196, 81, .4);
+    background:
+        radial-gradient(circle at 50% 10%, #a44a1c, transparent 45%),
+        linear-gradient(160deg, #803512, #74270d, #4a1909);
+    box-shadow: 0 0 40px rgba(255, 135, 30, .15);
+}
+
+.profile-area {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 43px;
+}
+
+.profile-ring {
+    width: 240px;
+    height: 240px;
+    padding: 8px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fff5a5, #ffb923, #fff0a0);
+    box-shadow: 0 0 12px #ffc451, 0 0 38px rgba(255, 193, 48, .65);
+}
+
+.profile-ring img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid #fff0b0;
+    border-radius: 50%;
+}
+
+.online-badge {
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 13px 24px;
+    min-width: 145px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ffdc68, #ffb928);
+    color: white;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    50% { opacity: .45; }
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: clamp(32px, 7vw, 46px);
+    font-weight: 800;
+    overflow-wrap: anywhere;
+}
+
+h1 span {
+    color: #7dffc2;
+}
+
+.subtitle {
+    margin-bottom: 45px;
+    color: #e6c4b1;
+    font-size: 21px;
+}
+
+.telegram-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    min-height: 120px;
+    padding: 20px 12px;
+    border-radius: 35px;
+    border: 1px solid rgba(255,255,255,.2);
+    background: linear-gradient(120deg, #ffc879, #ffb83e, #ffcf6d);
+    color: #fff;
+    font-size: clamp(22px, 5vw, 33px);
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(255,174,51,.22);
+    transition: .25s;
+}
+
+.telegram-button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.08);
+}
+
+.telegram-button:active {
+    transform: scale(.98);
+}
+
+.telegram-icon {
+    font-size: 40px;
+}
+
+.redirect-message {
+    margin-top: 17px;
+    color: #ffe0bf;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.redirect-message strong {
+    color: #83ffc5;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 45px 0 28px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: rgba(255, 205, 159, .17);
+}
+
+.divider span {
+    color: #d3a995;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.time-box {
+    padding: 17px 3px;
+    border: 1px solid rgba(255,228,203,.15);
+    border-radius: 23px;
+    background: rgba(255,231,208,.08);
+}
+
+.time-number {
+    display: block;
+    color: #7dffc2;
+    font-size: clamp(28px, 6vw, 47px);
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+}
+
+.time-label {
+    display: block;
+    margin-top: 10px;
+    color: #d5b3a0;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.disclaimer {
+    color: #d6b6a5;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.disclaimer strong {
+    color: #fff0e5;
+}
+
+.footer {
+    margin-top: 25px;
+    color: #bd8f77;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+@media(max-width:480px) {
+    body {
+        padding: 18px 7px;
+    }
+
+    .container {
+        padding: 55px 20px 32px;
+        border-radius: 43px;
+    }
+
+    .profile-ring {
+        width: 215px;
+        height: 215px;
+    }
+
+    .telegram-button {
+        min-height: 100px;
+        border-radius: 28px;
+    }
+
+    .telegram-icon {
+        font-size: 32px;
+    }
+
+    .countdown {
+        gap: 7px;
+    }
+
+    .time-box {
+        padding: 15px 2px;
+        border-radius: 17px;
+    }
+
+    .time-label {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .disclaimer {
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<main class="container">
+
+    <div class="profile-area">
+        <div class="profile-ring">
+            <img
+                src="https://i.postimg.cc/C5kgcMLz/IMG-20261012-WA0008.jpg"
+                alt="Sigma Loot Profile"
+            >
+        </div>
+
+        <div class="online-badge">
+            <span class="dot"></span>
+            ONLINE
+        </div>
+    </div>
+
+    <h1><span>Sigma</span> Loot</h1>
+
+    <p class="subtitle">Tips &amp; Tricks</p>
+
+    <!-- Button visible immediately -->
+    <a
+        href="https://t.me/sigmaalooterzzz"
+        class="telegram-button"
+        id="telegramButton"
+    >
+        <span class="telegram-icon">✈️</span>
+        <span>Join Telegram</span>
+    </a>
+
+    <!-- Auto redirect countdown -->
+    <p class="redirect-message" id="redirectMessage" aria-live="polite">
+        Telegram will open automatically in
+        <strong><span id="redirectSeconds">5</span> seconds.</strong>
+        <br>
+        Or tap the Join Telegram button above.
+    </p>
+
+    <div class="divider">
+        <span>READY TO JOIN</span>
+    </div>
+
+    <div class="countdown">
+        <div class="time-box">
+            <span class="time-number" id="days">00</span>
+            <span class="time-label">DAYS</span>
+        </div>
+
+        <div class="time-box">
+            <span class="time-number" id="hours">00</span>
+            <span class="time-label">HOURS</span>
+        </div>
+
+        <div class="time-box">
+            <span class="time-number" id="minutes">00</span>
+            <span class="time-label">MINS</span>
+        </div>
+
+        <div class="time-box">
+            <span class="time-number" id="seconds">05</span>
+            <span class="time-label">SECS</span>
+        </div>
+    </div>
+
+    <p class="disclaimer">
+        <strong>Disclaimer:</strong>
+        This is an independent community landing page and is not
+        affiliated with or endorsed by Telegram, Meta, or Facebook.
+        Please review information carefully and make your own decisions.
+    </p>
+
+    <div class="footer">
+        SIGMA LOOT &bull; COMMUNITY PAGE
+    </div>
+
+</main>
+
+<script>
+(function () {
+
+    "use strict";
+
+    const TELEGRAM_URL = "https://t.me/sigmaalooterzzz";
+    const REDIRECT_DELAY = 5;
+
+    const button = document.getElementById("telegramButton");
+    const redirectSeconds = document.getElementById("redirectSeconds");
+
+    let remaining = REDIRECT_DELAY;
+    let redirected = false;
+
+    /*
+     * Manual button click:
+     * Track the click and open Telegram.
+     */
+    button.addEventListener("click", function (event) {
+
+        event.preventDefault();
+
+        if (redirected) return;
+
+        redirected = true;
+        clearInterval(timer);
+
+        if (typeof window.fbq === "function") {
+            window.fbq("trackCustom", "TelegramJoinClick");
+        }
+
+        window.location.href = TELEGRAM_URL;
+    });
+
+    /*
+     * Automatic redirect after 5 seconds.
+     * If the visitor clicks the button first, the timer stops.
+     */
+    const timer = setInterval(function () {
+
+        if (redirected) {
+            clearInterval(timer);
+            return;
+        }
+
+        remaining--;
+
+        redirectSeconds.textContent = remaining;
+
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent =
+            String(remaining).padStart(2, "0");
+
+        if (remaining <= 0) {
+            redirected = true;
+            clearInterval(timer);
+
+            document.getElementById("redirectMessage").textContent =
+                "Opening Telegram...";
+
+            window.location.href = TELEGRAM_URL;
+        }
+
+    }, 1000);
+
+})();
+</script>
+
+</body>
+</html>
